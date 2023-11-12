@@ -237,6 +237,42 @@ Kindly read our [Contributing Guide](./CONTRIBUTING.md) to familiarize yourself 
 
 For security issues, kindly email us at security@apiwiz.com instead of posting a public issue on Github
 
+
+## Note: OpenSSL Error
+
+If you encounter an OpenSSL error during project setup, such as:
+
+```plaintext
+
+Error: error:0308010C:digital envelope routines::unsupported
+     {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+```
+
+Please follow these steps to resolve the issue:
+
+1. Update the `react-scripts` dependency from version 3.x to version 5.x. This can be done by modifying your `package.json` file:
+
+   ```json
+   "dependencies": {
+     "react-scripts": "5.0.0",
+     // other dependencies...
+   }
+   ```
+
+   Run `npm install` after updating the `package.json` file.
+
+2. This error might be related to incompatible versions of Node/NPM. Ensure that you are using supported versions.
+
+3. If the issue persists, consider updating Node.js and NPM to the latest LTS versions.
+
+Reference: [Error: error:0308010C:digital envelope routines::unsupported - Node.js error solved](https://www.freecodecamp.org/news/error-error-0308010c-digital-envelope-routines-unsupported-node-error-solved/)
+
+
 ## Follow Us
 Join our growing community! Checkout out our official [Blog](https://www.apiwiz.io/resources/blogs). Follow us on [Twitter](https://twitter.com/getapiwiz), [Linkedin](https://www.linkedin.com/company/apiwizio/)
 
