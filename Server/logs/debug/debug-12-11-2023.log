@@ -1,0 +1,4 @@
+12-11-2023 12:07:12 info: "( server.js : 57 ) log --> Server started on PORT 3002"
+12-11-2023 12:07:15 info: "( db\\db.connect.js : 25 ) log --> APIwiz Database connected"
+12-11-2023 13:15:23 info: "( server.js : 57 ) log --> Server started on PORT 3002"
+12-11-2023 13:15:25 info: "( db\\db.connect.js : 25 ) log --> APIwiz Database connected"
